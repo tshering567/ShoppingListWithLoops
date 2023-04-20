@@ -7,7 +7,7 @@ public class ItemsForSale {
             new Item("1235", "old shoes", 19.00, true),
             new Item("1236", "a buggy program", 42.00, true),
             new Item("1237", "Delicious Baklava", 9.00, true),
-            new Item("1238", "A toothbrush", 9.00, true),
+            new Item("1238", "A toothbrush", 9.00, false),
     };
 
 

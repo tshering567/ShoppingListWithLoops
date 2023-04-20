@@ -10,7 +10,9 @@ public class ShoppingListWithLoopsMain {
 
         Item[] itemsForSale = ItemsForSale.itemsForSale;
         for (Item i : itemsForSale){
-            System.out.println(i);
+            if ( ! i.isInStock()) continue;
+            // System.out.println(i);
+            System.out.println(i.getDescription());
 
         }
 
@@ -19,6 +21,18 @@ public class ShoppingListWithLoopsMain {
         // Read in the user's response
 
         // Parse their choice and get that item from the list
+
+        String selectedProductId = "1237";
+        Item selectedItem = null;
+
+        for (Item currentItemInListInTheLoop : itemsForSale ){
+            if (selectedProductId.equals(currentItemInListInTheLoop.getProductID())){
+                selectedItem = currentItemInListInTheLoop;
+                break;
+            }
+        }
+
+
 
         // Tell the user they can have it for a price!
         // show them the price and ask them to accept it
