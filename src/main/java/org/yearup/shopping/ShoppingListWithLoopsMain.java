@@ -22,7 +22,7 @@ public class ShoppingListWithLoopsMain {
 
         // Parse their choice and get that item from the list
 
-        String selectedProductId = "1237";
+        String selectedProductId = null;
         Item selectedItem = null;
 
         for (Item currentItemInListInTheLoop : itemsForSale ){
