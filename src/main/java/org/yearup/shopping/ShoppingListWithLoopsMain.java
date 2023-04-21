@@ -30,10 +30,13 @@ public class ShoppingListWithLoopsMain {
         String response = consoleInput.nextLine();
         // Read their response
         if (response.equals("yes")){ //   if yes, tell them it's theirs
-            System.out.println("The item is yours. Thank you for shopping with us.");
+            System.out.println("The item is yours. Thank you for shopping with us");
         } else if (response.equals("no")) {
             System.out.println("Hello, here are the list of the items:");
         }
+
+
+
         //   if no, start over and show them the list again
 
 
